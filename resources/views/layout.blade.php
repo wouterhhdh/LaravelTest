@@ -5,11 +5,11 @@
     <title>Document</title>
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css"> 
-    <!-- In dit document plaats ik elementen die ik binnen eenzelfde layout wil gebruiken. Alle pagina's die gekoppeld worden aan dit document krijgen dus deze zelfde elementen mee -->
+    @yield ('header')
 </head>
 <body>
-
-    @yield('content') <!-- alle secties die we 'content' genoemd hebben wil ik hier plaatsen -->
-    
+    @yield ('menu')    
+    @yield('content')
+    @yield('footer') <!-- meerdere yield elementen kunnen geplaatst worden -->
 </body>
 </html>
