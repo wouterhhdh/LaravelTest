@@ -15,5 +15,3 @@
 Route::get('/', 'PagesController@home');
 Route::get('about', 'PagesController@about');
 
-//full page route above
-
