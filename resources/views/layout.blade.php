@@ -10,6 +10,6 @@
 <body>
     @yield ('menu')    
     @yield('content')
-    @yield('footer') <!-- meerdere yield elementen kunnen geplaatst worden -->
+    @yield('footer')
 </body>
 </html>
