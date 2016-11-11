@@ -12,12 +12,13 @@
 	
 	<h3>Add a new note</h3>
 
-	<form method="POST">
+	<form method="POST" action="/cards/{{ $card->id }}/notes">
+		 {{ csrf_field() }}
 		<div class="form-group">
 			<textarea name="body" class="form-control"></textarea>
 		</div>
 		<div class="form-group">
-			<button type="submit" class="btn">add note</button>
+			<button type="submit" class="btn btn-primary">add note</button>
 		</div>
 		
 	</form>
