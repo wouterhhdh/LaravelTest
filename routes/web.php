@@ -15,3 +15,8 @@
 Route::get('/', 'PagesController@home');
 Route::get('about', 'PagesController@about');
 
+Route::get('cards', 'CardsController@index');
+Route::get('cards/{card}', 'CardsController@show');
+// if a user goes to a specific card, cardcontroller uses the 'show'-function
+
+
