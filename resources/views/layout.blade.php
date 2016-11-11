@@ -4,14 +4,16 @@
     <meta charset="UTF-8">
     <title>Document</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" type="text/css" href="/css/app.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
     {{-- /css/style.css verwijst naar public/css/style.css wanneer deze online staat --}}
     @yield ('header')
 </head>
 <body>
-    @yield ('menu')    
-    @yield('content')
+    @yield ('menu')
+    <div class="container">
+        @yield('content')
+    </div> 
+    
     @yield('footer')
 </body>
 </html>
