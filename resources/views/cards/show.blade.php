@@ -5,7 +5,12 @@
 	<h2> {{ $card->title }}</h2>
 		<ul class="list-group">
 		@foreach ($card->notes as $note)
-			<li class="list-group-item">{{ $note->body }}</li>
+			<li class="list-group-item">
+				{{ $note->body }}
+				<a href="../note/{{$note->id}}/edit" class="remove">X</a>
+				<a href="../note/{{$note->id}}/edit" class="edit">edit</a>
+				
+				</li>
 		@endforeach
 		</ul>
 	<hr>

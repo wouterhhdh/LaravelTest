@@ -5,6 +5,7 @@
     <title>Document</title>
 
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/css/app.css">
     {{-- /css/style.css verwijst naar public/css/style.css wanneer deze online staat --}}
     @yield ('header')
 </head>

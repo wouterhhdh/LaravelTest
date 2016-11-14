@@ -1,4 +1,5 @@
-body {
-  background-color: #eee; }
+.edit, .remove {
+  float: right;
+  padding-left: 10px; }
 
 /*# sourceMappingURL=app.css.map */
