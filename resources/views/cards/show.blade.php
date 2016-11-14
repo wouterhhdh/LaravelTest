@@ -19,9 +19,8 @@
 	<h3>Add a new note</h3>
 
 	<form method="POST" action="/cards/{{ $card->id }}/notes">
-		<input type="hidden" name="user_id" value="1">
-		{{ csrf_field() }}
 		
+		{{ csrf_field() }}
 		<div class="form-group">
 			<textarea name="body" class="form-control"></textarea>
 		</div>
