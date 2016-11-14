@@ -7,9 +7,9 @@
 		@foreach ($card->notes as $note)
 			<li class="list-group-item">
 				{{ $note->body }}
-				<a href="#">{{$note->user_username}}</a>
-				<a href="../note/{{$note->id}}/edit" class="remove">X</a>
-				<a href="../note/{{$note->id}}/edit" class="edit">edit</a>
+				<a href="#" class="pull-right">{{$note->user->username}}</a>
+{{-- 				<a href="../note/{{$note->id}}/edit" class="remove">X</a>
+				<a href="../note/{{$note->id}}/edit" class="edit">edit</a> --}}
 				
 				</li>
 		@endforeach
@@ -19,7 +19,9 @@
 	<h3>Add a new note</h3>
 
 	<form method="POST" action="/cards/{{ $card->id }}/notes">
-		 {{ csrf_field() }}
+		<input type="hidden" name="user_id" value="1">
+		{{ csrf_field() }}
+		
 		<div class="form-group">
 			<textarea name="body" class="form-control"></textarea>
 		</div>
