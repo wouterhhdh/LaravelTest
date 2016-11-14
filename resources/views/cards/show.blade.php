@@ -22,12 +22,19 @@
 		
 		{{ csrf_field() }}
 		<div class="form-group">
-			<textarea name="body" class="form-control"></textarea>
+			<textarea name="body" class="form-control">{{old('body')}}</textarea>
 		</div>
 		<div class="form-group">
 			<button type="submit" class="btn btn-primary">add note</button>
 		</div>
 		
 	</form>
+	@if (count($errors))
+		<ul>
+			@foreach ($errors->all() as $error)
+				<li>{{$error}}</li>
+			@endforeach
+		</ul>
+	@endif
 
 @stop
