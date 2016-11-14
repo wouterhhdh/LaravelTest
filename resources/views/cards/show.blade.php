@@ -7,6 +7,7 @@
 		@foreach ($card->notes as $note)
 			<li class="list-group-item">
 				{{ $note->body }}
+				<a href="#">{{$note->user_username}}</a>
 				<a href="../note/{{$note->id}}/edit" class="remove">X</a>
 				<a href="../note/{{$note->id}}/edit" class="edit">edit</a>
 				
